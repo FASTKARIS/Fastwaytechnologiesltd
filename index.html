@@ -1,0 +1,2225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fastway Technologies LTD - Designing Tomorrow's Tech Today</title>
+    <meta name="description" content="Fastway Technologies LTD - Innovative IT solutions provider in Kenya offering software development, mobile apps, cloud solutions and cybersecurity services">
+    <meta name="keywords" content="IT solutions Kenya, software development Nairobi, mobile apps Kenya, cloud services Kenya">
+    
+    <!-- SEO & Social Meta Tags -->
+    <link rel="canonical" href="https://fastwaytechnologies.co.ke">
+    <meta property="og:title" content="Fastway Technologies LTD - IT Solutions in Kenya">
+    <meta property="og:description" content="Innovative IT solutions provider in Kenya offering comprehensive technology services">
+    <meta property="og:image" content="https://fastwaytechnologies.co.ke/images/social-preview.jpg">
+    <meta property="og:url" content="https://fastwaytechnologies.co.ke">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Fastway Technologies LTD",
+        "image": "https://fastwaytechnologies.co.ke/logo.jpg",
+        "url": "https://fastwaytechnologies.co.ke",
+        "telephone": "+254791414012",
+        "email": "fastway1technologies@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "The Knord Mall, Kamiti Road",
+            "addressLocality": "Ruiru",
+            "addressRegion": "Kiambu",
+            "addressCountry": "Kenya"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-1.1498",
+            "longitude": "36.9564"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "sameAs": [
+            "https://www.facebook.com/FastwayTechnologiesKE",
+            "https://www.instagram.com/fastwaytechnologies"
+        ]
+    }
+    </script>
+    
+    <style>
+        /* CSS Styles */
+        :root {
+            --primary: #0056b3;
+            --secondary: #003366;
+            --accent: #ff6600;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #28a745;
+            --error: #dc3545;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+       
+       .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-logo {
+    height: 40px; /* Adjust as needed */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .header-logo {
+        height: 30px;
+    }
+    .logo-container {
+        gap: 10px;
+    }
+}
+        
+        /* ==================== */
+        /* SECTION STYLING FIXES */
+        /* ==================== */
+        section {
+            padding: 80px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Background Alternation */
+        .services { background: white; }
+        .products { background: #f8f9fa; }
+        .about { background: white; }
+        .testimonials { 
+            background: #f8f9fa;
+            padding: 100px 0;
+        }
+
+        /* Section Divider (Above Testimonials) */
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="%23ffffff" opacity=".25"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="%23ffffff" opacity=".5"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%23ffffff"/></svg>');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* Header Styles */
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: 0;
+            background: var(--primary);
+            color: white;
+            padding: 1rem;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            left: 0;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+        
+        nav ul li a:hover,
+        nav ul li a:focus {
+            color: var(--accent);
+            outline: 2px solid var(--accent);
+            outline-offset: 3px;
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin: 0 auto 2.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: 2px solid var(--accent);
+            cursor: pointer;
+        }
+        
+        .btn:hover,
+        .btn:focus {
+            background-color: transparent;
+            color: var(--accent);
+            outline: none;
+        }
+        
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--secondary);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: var(--accent);
+            bottom: 0;
+            left: 25%;
+        }
+        
+        .section-title p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+            cursor: pointer;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .service-card i {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card h3 {
+            margin-bottom: 1rem;
+            color: var(--secondary);
+            font-size: 1.4rem;
+        }
+        
+        .service-card p {
+            color: #666;
+            font-size: 1rem;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            loading: lazy;
+        }
+        
+        .about-text h2 {
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+        }
+        
+        .about-text p {
+            margin-bottom: 1.2rem;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* Products Section */
+        .product-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            align-items: center;
+        }
+        
+        .filter-btn {
+            padding: 0.6rem 1.2rem;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+        
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        .filter-btn:hover:not(.active) {
+            background: #f5f5f5;
+        }
+        
+        .search-box {
+            position: relative;
+            margin-left: auto;
+        }
+        
+        .search-box input {
+            padding: 0.6rem 1.2rem 0.6rem 2.5rem;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            width: 250px;
+            font-size: 1rem;
+        }
+        
+        .search-box i {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #777;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--accent);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            z-index: 1;
+        }
+        
+        .product-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            loading: lazy;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-info h3 {
+            color: var(--secondary);
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+        
+        .product-description {
+            color: #666;
+            margin-bottom: 1.2rem;
+            font-size: 0.95rem;
+        }
+        
+        .product-features {
+            margin-bottom: 1.5rem;
+        }
+        
+        .product-features ul {
+            list-style: none;
+        }
+        
+        .product-features li {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        
+        .product-features i {
+            color: var(--accent);
+            margin-right: 0.5rem;
+            font-size: 0.8rem;
+        }
+        
+        .product-contact-btn {
+            display: inline-block;
+            width: 100%;
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.8rem;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: all 0.3s;
+            border: 1px solid var(--secondary);
+            font-weight: 500;
+        }
+        
+        .product-contact-btn:hover,
+        .product-contact-btn:focus {
+            background-color: transparent;
+            color: var(--secondary);
+            outline: none;
+        }
+        
+        .product-contact-btn i {
+            margin-right: 0.5rem;
+        }
+        
+        /* Testimonials */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-content {
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            color: #555;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            object-fit: cover;
+            loading: lazy;
+        }
+        
+        .author-info h4 {
+            color: var(--secondary);
+            margin-bottom: 0.2rem;
+        }
+        
+        .author-info p {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 1.8rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+            font-size: 1rem;
+        }
+        
+        .form-messages {
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        .form-messages.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            display: block;
+        }
+        
+        .form-messages.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            display: block;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 4rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 1.8rem;
+            font-size: 1.3rem;
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-column p {
+            color: #ccc;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: block;
+            padding: 0.3rem 0;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--accent);
+            transform: translateX(5px);
+        }
+        
+        .contact-info li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.2rem;
+        }
+        
+        .contact-info i {
+            margin-right: 1rem;
+            color: var(--accent);
+            font-size: 1.1rem;
+            margin-top: 0.2rem;
+        }
+        
+        .social-links {
+            display: flex;
+            margin-top: 1.5rem;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            margin-right: 1rem;
+            color: white;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1.5rem;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        /* Live Chat */
+        .live-chat button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            z-index: 999;
+        }
+        
+        /* Loader */
+        .loader {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+            margin-left: 0.5em;
+            vertical-align: middle;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Error Message */
+        .error-message {
+            color: var(--error);
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+        
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            nav ul {
+                display: none;
+                width: 100%;
+                margin-top: 1rem;
+                flex-direction: column;
+            }
+            
+            nav ul[aria-expanded="true"] {
+                display: flex;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+            
+            .contact-form {
+                padding: 2rem;
+            }
+            
+            .search-box input {
+                width: 200px;
+            }
+            
+            /* Enhanced mobile touch targets */
+            nav ul li a, .btn {
+                padding: 1rem;
+                min-width: 48px;
+                min-height: 48px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero {
+                padding: 4rem 0;
+                min-height: auto;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .service-card, .testimonial-card {
+                padding: 1.5rem;
+            }
+            
+            .contact-form {
+                padding: 1.5rem;
+            }
+            
+            .product-filters {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .search-box {
+                margin-left: 0;
+                width: 100%;
+            }
+            
+            .search-box input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Skip to Content Link -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+ <div class="header-content">
+    <div class="logo-container">
+        <img 
+            src="https://res.cloudinary.com/duroxsda4/image/upload/v1753291235/fastway_technologies_png_logo_wstkv6.png" 
+            alt="Fastway Technologies Logo"
+            class="header-logo"
+        >
+        <div class="logo">FASTWAY<span>TECHNOLOGIES</span></div>
+    </div>
+    <nav aria-label="Main navigation">
+                <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                        <span class="sr-only">Menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul id="primary-navigation">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Designing Tomorrow's Tech Today</h1>
+                    <p>Fastway Technologies LTD is a dynamic and innovative IT solutions provider dedicated to empowering businesses with cutting-edge technology. With our focus on innovation, excellence, and customer satisfaction, we deliver comprehensive IT solutions tailored to your unique business needs.</p>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Services</h2>
+                    <p>Comprehensive solutions tailored to your business needs</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" id="cctv-service" tabindex="0">
+                        <i class="fas fa-video"></i>
+                        <h3>CCTV & Surveillance Systems</h3>
+                        <p>Implementing advanced CCTV systems and Surveillance solutions to enhance security and monitor activities. Our solutions include high-resolution cameras, remote monitoring, and AI-powered analytics.</p>
+                    </div>
+                    
+                    <div class="service-card" id="cybersecurity-service" tabindex="0">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Cybersecurity</h3>
+                        <p>Comprehensive cybersecurity services including vulnerability assessments, pen testing, ethical hacking, firewall implementation, and security awareness training to safeguard your valuable data and systems.</p>
+                    </div>
+                    
+                    <div class="service-card" id="voip-service" tabindex="0">
+                        <i class="fas fa-headset"></i>
+                        <h3>VoIP Call Centers</h3>
+                        <p>Providing professional call center solutions with advanced VoIP technology for customer care support, technical assistance, and sales operations with real-time analytics.</p>
+                    </div>
+                    
+                    <div class="service-card" id="it-infra-service" tabindex="0">
+                        <i class="fas fa-server"></i>
+                        <h3>IT Infrastructures</h3>
+                        <p>Designing, implementing, and managing robust IT infrastructures including server setup, cloud migration, virtualization, and disaster recovery solutions.</p>
+                    </div>
+                    
+                    <div class="service-card" id="networking-service" tabindex="0">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Networking & Cabling</h3>
+                        <p>Installing high-quality structured cabling infrastructure and maintaining secure network solutions with enterprise grade switches, routers, and wireless access points.</p>
+                    </div>
+                    
+                    <div class="service-card" id="access-control-service" tabindex="0">
+                        <i class="fas fa-door-open"></i>
+                        <h3>Access Control</h3>
+                        <p>Implementing biometric and card based access control systems with centralized management to restrict unauthorized access to sensitive areas of your facility.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products" id="products">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Products & Solutions</h2>
+                    <p>Explore our comprehensive technology offerings</p>
+                </div>
+                
+                <div class="product-filters">
+                    <button class="filter-btn active" data-filter="all">All Solutions</button>
+                    <button class="filter-btn" data-filter="hardware">Hardware</button>
+                    <button class="filter-btn" data-filter="software">Software</button>
+                    <div class="search-box">
+                        <input type="text" id="product-search" placeholder="Search solutions..." aria-label="Search products">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                
+                <div class="products-grid">
+                  <!-- Product 1 - Hardware -->
+                    <div class="product-card" data-category="hardware">
+                       <div class="product-badge">Popular</div>
+                        <div class="product-image">
+                           <img src="https://res.cloudinary.com/duroxsda4/image/upload/v1753363941/Cctv_Kit_installation.jpg" alt="Surveillance System" loading="lazy" width="500" height="300">
+                        </div>
+                        <div class="product-info">
+                            <h3>CCTV & Surveillance Kit</h3>
+                            <p class="product-description">Complete security solution with AI-powered cameras and monitoring.</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> High resolution NVR/DVR</li>
+                                    <li><i class="fas fa-check"></i> 4K resolution cameras</li>
+                                    <li><i class="fas fa-check"></i> High quality CCTV cables</li>
+                                    <li><i class="fas fa-check"></i> Night vision capability</li>
+                                    <li><i class="fas fa-check"></i> Motion detection alerts</li>
+                                    <li><i class="fas fa-check"></i> Cloud storage option</li>
+                                    <li><i class="fas fa-check"></i> Automatic Number Plate Recognition</li>
+                                </ul>
+                            </div>
+                            <a href="mailto:fastway1technologies@gmail.com?subject=Inquiry About Smart Surveillance Kit" class="product-contact-btn" rel="noopener noreferrer">
+                                <i class="fas fa-envelope"></i> Request Details
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 - Hardware -->
+                    <div class="product-card" data-category="hardware">
+                        <div class="product-image">
+                            <img src="https://res.cloudinary.com/duroxsda4/image/upload/c_crop,w_3200,h_2400,ar_4:3/v1753368058/fastway_biometric_access_control.jpg" alt="Access Control System" loading="lazy" width="500" height="300">
+                        </div>
+                        <div class="product-info">
+                            <h3>Biometric & Access Control System</h3>
+                            <p class="product-description">Advanced access control solution for offices and secure facilities.</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Biometric recognition</li>
+                                    <li><i class="fas fa-check"></i> Voice recognition</li>
+                                    <li><i class="fas fa-check"></i> RFID Card access option</li>
+                                    <li><i class="fas fa-check"></i> Remote management</li>
+                                    <li><i class="fas fa-check"></i> Payroll system integration</li>
+                                    <li><i class="fas fa-check"></i> Audit trail reporting</li>
+                                </ul>
+                            </div>
+                            <a href="mailto:fastway1technologies@gmail.com?subject=Inquiry About SecureAccess Control System" class="product-contact-btn" rel="noopener noreferrer">
+                                <i class="fas fa-envelope"></i> Request Details
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 - Hardware -->
+                    <div class="product-card" data-category="hardware">
+                        <div class="product-badge">Best Seller</div>
+                        <div class="product-image">
+                            <img src="https://res.cloudinary.com/duroxsda4/image/upload/v1753367051/fastway_networking_project.jpg" alt="Network Equipment" loading="lazy" width="500" height="300">
+                        </div>
+                        <div class="product-info">
+                            <h3>Enterprise Networking Bundle</h3>
+                            <p class="product-description">Complete networking solution for businesses with high-speed connectivity needs.</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Endpoint devices: Desktops, laptops</li>
+                                    <li><i class="fas fa-check"></i> Network devices: Mikrotiks, Firewalls, Repeaters, Routers, Switches, Servers and Storage</li>
+                                    <li><i class="fas fa-check"></i> Area networks: LANs, Wide Area Networks (WANs)</li>
+                                    <li><i class="fas fa-check"></i> Virtual Private Networks (VPNs)</li>
+                                    <li><i class="fas fa-check"></i> High quality Cat6 & Cat7 Pure Copper Cables</li>
+                                </ul>
+                            </div>
+                            <a href="mailto:fastway1technologies@gmail.com?subject=Inquiry About Enterprise Network Bundle" class="product-contact-btn" rel="noopener noreferrer">
+                                <i class="fas fa-envelope"></i> Request Details
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 - Hardware -->
+                    <div class="product-card" data-category="hardware">
+                        <div class="product-badge">Featured</div>
+                        <div class="product-image">
+                            <img src="https://res.cloudinary.com/duroxsda4/image/upload/v1753440939/fastway_call_center_models.png" alt="VoIP Call Center Solution" loading="lazy" width="500" height="300">
+                        </div>
+                        <div class="product-info">
+                            <h3>VoIP Call Centers</h3>
+                            <p class="product-description">Advanced call center solutions with intelligent call routing and real-time analytics.</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Concurrent calls</li>
+                                    <li><i class="fas fa-check"></i> Automatic Call  Distribution (ACD)</li>
+                                    <li><i class="fas fa-check"></i> Intelligent call routing</li>
+                                    <li><i class="fas fa-check"></i> Remote work capability</li>
+                                    <li><i class="fas fa-check"></i> Real time dashboard</li>
+                                    <li><i class="fas fa-check"></i> Centralized Communication</li>
+                                    <li><i class="fas fa-check"></i> CRM integration</li>
+                                    <li><i class="fas fa-check"></i> Live Call recording & monitoring</li>
+                                </ul>
+                            </div>
+                            <a href="mailto:fastway1technologies@gmail.com?subject=Inquiry About FastCall VoIP Center" class="product-contact-btn" rel="noopener noreferrer">
+                                <i class="fas fa-envelope"></i> Request Details
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 5 - Software -->
+<div class="product-card" data-category="software">
+    <div class="product-image">
+        <img src="https://res.cloudinary.com/duroxsda4/image/upload/v1756554590/fastway_technologies_IoT_solutions_bpycrd.png" 
+             alt="IoT Solutions" loading="lazy" width="500" height="300">
+    </div>
+    <div class="product-info">
+        <h3>Internet of Things (IoT) Solutions</h3>
+        <p class="product-description">Smart, connected solutions that enhance security, efficiency, and automation for businesses and homes in Kenya and beyond.</p>
+        <div class="product-features">
+            <ul>
+                <li><i class="fas fa-check"></i> Smart Office: Biometrics, energy monitoring, & access control</li>
+                <li><i class="fas fa-check"></i> Smart Retail: Inventory tracking, customer analytics</li>
+                <li><i class="fas fa-check"></i> Smart Industry: Machine monitoring, predictive maintenance & fleet tracking</li>
+                <li><i class="fas fa-check"></i> Smart Home & Estates: Lighting, appliances, water & energy maintenance, CCTVs & automation</li>
+            </ul>
+        </div>
+        <a href="mailto:fastway1technologies@gmail.com?subject=Inquiry About IoT Solutions" 
+           class="product-contact-btn" rel="noopener noreferrer">
+            <i class="fas fa-envelope"></i> Request Details
+        </a>
+    </div>
+</div>
+
+                    
+                    <!-- Product 6 - Software -->
+                    <div class="product-card" data-category="software">
+                        <div class="product-badge">New</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Security Package" loading="lazy" width="500" height="300">
+                        </div>
+                        <div class="product-info">
+                            <h3>CyberShield Security Suite</h3>
+                            <p class="product-description">Complete cybersecurity solution with firewall, antivirus, and network monitoring.</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Real time threat detection</li>
+                                    <li><i class="fas fa-check"></i> Threat mitigation</li>
+                                    <li><i class="fas fa-check"></i> Automated security updates</li>
+                                    <li><i class="fas fa-check"></i> Intrusion Detection and Prevention Systems (IDPS)</li>
+                                    <li><i class="fas fa-check"></i> Data Loss Prevention (DLP)</li>
+                                    <li><i class="fas fa-check"></i> Compliance reporting</li>
+                                    <li><i class="fas fa-check"></i> 24/7 monitoring support</li>
+                                </ul>
+                            </div>
+                            <a href="mailto:fastway1technologies@gmail.com?subject=Inquiry About CyberShield Security Suite" class="product-contact-btn" rel="noopener noreferrer">
+                                <i class="fas fa-envelope"></i> Request Details
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 7 - Hardware -->
+                    <div class="product-card" data-category="hardware">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="POS System" loading="lazy" width="500" height="300">
+                        </div>
+                        <div class="product-info">
+                            <h3>Advanced POS System</h3>
+                            <p class="product-description">Complete retail solution with inventory management, customer loyalty programs, and sales analytics.</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 15.6" Touchscreen display</li>
+                                    <li><i class="fas fa-check"></i> Integrated barcode scanner</li>
+                                    <li><i class="fas fa-check"></i> Receipt printer included</li>
+                                    <li><i class="fas fa-check"></i> Cloud backup system</li>
+                                </ul>
+                            </div>
+                            <a href="mailto:fastway1technologies@gmail.com?subject=Inquiry About Advanced POS System" class="product-contact-btn" rel="noopener noreferrer">
+                                <i class="fas fa-envelope"></i> Request Details
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 - Software -->
+                    <div class="product-card" data-category="software">
+                      <div class="product-badge">New</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Hospitality Software" loading="lazy" width="500" height="300">
+                        </div>
+                        <div class="product-info">
+                            <h3>Management Systems</h3>
+                            <p class="product-description">Comprehensive solution for Schools, hotels, hospitals, resorts, and hospitality businesses.</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Student information & Examination modules</li>
+                                    <li><i class="fas fa-check"></i> Fee management & Parent portals</li>
+                                    <li><i class="fas fa-check"></i> Reservation management</li>
+                                    <li><i class="fas fa-check"></i> Point of sale integration</li>
+                                    <li><i class="fas fa-check"></i> Housekeeping modules</li>
+                                    <li><i class="fas fa-check"></i> Multi-property support</li>
+                                </ul>
+                            </div>
+                            <a href="mailto:fastway1technologies@gmail.com?subject=Inquiry About Hotel Management System" class="product-contact-btn" rel="noopener noreferrer">
+                                <i class="fas fa-envelope"></i> Request Details
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 9 - Software -->
+                    <div class="product-card" data-category="software">
+                        <div class="product-badge">On Demand</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Business Software Suite" loading="lazy" width="500" height="300">
+                        </div>
+                        <div class="product-info">
+                            <h3>Enterprise Business Suite</h3>
+                            <p class="product-description">Comprehensive business management platform integrating CRM, ERP, and HR modules with real-time analytics.</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Multi-location management</li>
+                                    <li><i class="fas fa-check"></i> Custom reporting tools</li>
+                                    <li><i class="fas fa-check"></i> Mobile app included</li>
+                                    <li><i class="fas fa-check"></i> 24/7 technical support</li>
+                                </ul>
+                            </div>
+                            <a href="mailto:fastway1technologies@gmail.com?subject=Inquiry About Enterprise Business Suite" class="product-contact-btn" rel="noopener noreferrer">
+                                <i class="fas fa-envelope"></i> Request Details
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://res.cloudinary.com/duroxsda4/image/upload/v1756657481/Fastway_Technologies_Ltd_Team_Meeting_iggzoe.png" alt="Fastway Technologies Team" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                    </div>
+                    
+                    <div class="about-text">
+                        <h2>About Fastway Technologies</h2>
+                        <p>Founded in 2024, Fastway Technologies LTD (FTL) has quickly established itself as a leading provider of innovative technology solutions in Kenya. Our team of certified professionals brings together decades of combined experience across various technology domains.</p>
+                        <p>Our mission is to create a world where technology seamlessly integrates into everyday life, enhancing efficiency, productivity, and security. We believe in building long term partnerships with our clients by delivering solutions that drive real business value.</p>
+                        <p>We pride ourselves on delivering solutions that are not just technologically advanced but also align with our clients' business goals and industry requirements. Our approach combines technical expertise with deep understanding of local business challenges.</p>
+                        <a href="#contact" class="btn">Learn More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What Our Clients Say</h2>
+                    <p>Hear from some of the businesses we've helped transform through technology</p>
+                </div>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Fastway Technologies transformed our outdated systems into a modern, efficient platform. Their team delivered exceptional results on time and within budget. The new system has reduced our operational costs by 30% while improving service delivery."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            
+                            <div class="author-info">
+                                <h4>Sarah Kariuki</h4>
+                                <p>Director, Lawas Investment</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Our Call Center Set Up that was designed and developed by Fastway Technologies has significantly increased our customer engagement metrics. Their attention to detail and user experience focus is remarkable. We've seen a 45% improvement in call resolution times."</p>
+                        </div>
+                        <div class="testimonial-author">
+
+                            <div class="author-info">
+                                <h4>Frederick Chege</h4>
+                                <p>CEO, Ujenzi Distributors Ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Their cybersecurity assessment identified vulnerabilities we didn't know existed. Fastway's solutions have given us peace of mind about our data security. Their team provided excellent training for our staff and continues to offer proactive monitoring."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            
+                            <div class="author-info">
+                                <h4>Kenneth W.</h4>
+                                <p>IT Manager, Ujenzi Distributors Ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Fastway Technologies transformed our institution's security with their cutting edge CCTV and surveillance solutions. From the initial consultation to installation, their team demonstrated exceptional expertise and attention to detail. The system has significantly improved our campus safety."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            
+                            <div class="author-info">
+                                <h4>Madam Iregi</h4>
+                                <p>Principal, Aberdare Teachers Training College</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Fastway Technologies Ltd. implemented a high speed, redundant network with advanced firewall protection, seamless Wi-Fi coverage, and VLAN segmentation for enhanced security. Their engineers were meticulous in planning and execution, ensuring zero disruptions during the transition. Network performance has improved drastically, and their proactive maintenance has kept issues at bay. Fastway is truly a trusted partner for enterprise grade networking"</p>
+                        </div>
+                        <div class="testimonial-author">
+                             
+                            <div class="author-info">
+                                <h4>Lydiah K.</h4>
+                                <p>CEO, Eish Lovers Nest</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"We partnered with Fastway Technologies Ltd. to upgrade our office networking infrastructure, and the results have been outstanding. Their team designed a scalable, high speed network that eliminated all our connectivity issues. The setup was seamless, and their after sales support is top notch. Fastway is our go to for all IT networking needs"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            
+                            <div class="author-info">
+                                <h4>Martin Avyla</h4>
+                                <p>Director, Avyla ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch to discuss your technology needs</p>
+                </div>
+                
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xqaqjvqz" method="POST" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">
+                                Your Name <span class="sr-only">(required)</span>
+                                <span aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="name" name="name" required aria-required="true" minlength="2" maxlength="100">
+                            <div class="error-message" id="name-error" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address <span class="sr-only">(required)</span>
+                                <span aria-hidden="true">*</span>
+                            </label>
+                            <input type="email" id="email" name="email" required aria-required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            <div class="error-message" id="email-error" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" aria-label="Phone number (optional)" pattern="[0-9]{10,15}">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service" aria-label="Select service interested in">
+                                <option value="">Select a service</option>
+                                <option value="cctv">CCTV & Surveillance</option>
+                                <option value="cybersecurity">Cybersecurity</option>
+                                <option value="voip">VoIP Call Centers</option>
+                                <option value="it-infra">IT Infrastructure</option>
+                                <option value="networking">Networking</option>
+                                <option value="cabling">Structural Cabling</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                Your Message <span class="sr-only">(required)</span>
+                                <span aria-hidden="true">*</span>
+                            </label>
+                            <textarea id="message" name="message" required aria-required="true" minlength="10" maxlength="1000"></textarea>
+                            <div class="error-message" id="message-error" role="alert"></div>
+                        </div>
+                        
+                        <!-- Dynamic CAPTCHA -->
+                        <div class="form-group">
+                            <label for="captcha-response" id="captcha-question"></label>
+                            <input type="hidden" id="captcha-answer" name="captcha-answer">
+                            <input type="text" id="captcha-response" name="captcha-response" required>
+                            <div class="error-message" id="captcha-error" role="alert"></div>
+                        </div>
+                        
+                        <!-- Honeypot Field -->
+                        <div class="form-group" hidden aria-hidden="true">
+                            <label for="website">Leave this blank</label>
+                            <input type="text" id="website" name="website">
+                        </div>
+                        
+                        <div class="form-messages" id="form-messages" role="alert"></div>
+                        <button type="submit" class="btn" id="submit-btn">
+                            <span class="btn-text">SUBMIT</span>
+                            <span class="loader" aria-hidden="true"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Fastway Technologies</h3>
+                    <p>Designing Tomorrow's Tech Today. We help businesses unlock their full potential through innovative technology solutions.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/254791414012" target="_blank" aria-label="Chat on WhatsApp" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                         <a href="https://www.tiktok.com/@fastwaytechnologiesltd" target="_blank" aria-label="Visit our TikTok profile" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/FastwayTechnologiesLTD" target="_blank" aria-label="Visit our Facebook page" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/fastwaytechnosKE" target="_blank" aria-label="Visit our Instagram profile" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#about">About Company</a></li>
+                        <li><a href="#products">Our Solutions</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#" onclick="document.getElementById('policyModal').style.display='block'">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">All Services</a></li>
+                        <li><a href="#cctv-service">CCTV and Surveillance</a></li>
+                        <li><a href="#cybersecurity-service">Cybersecurity</a></li>
+                        <li><a href="#voip-service">VoIP Call Centers</a></li>
+                        <li><a href="#networking-service">Networking</a></li>
+                        <li><a href="#it-infra-service">IT Infrastructure</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>The Knord Mall, Kamiti Road, Ruiru, Kenya</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+254791414012">+254 791 414 012</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+2547107703880">+254 107 703 880</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:fastway1technologies@gmail.com">fastway1technologies@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 8:00 AM - 5:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="current-year">2023</span> Powerd By Fastway Technologies LTD | All Rights Reserved | Designed with <i class="fas fa-heart" style="color: #ff6600;"></i> in Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget -->
+    <!-- Live Chat Widget -->
+<!-- 🔹 FASTWAY BOT -->
+<div id="chatbot">
+  <div id="chat-header" onmousedown="dragMouseDown(event, 'chatbot')">
+    Fastway Bot
+    <button onclick="minimizeChat()" style="float:right;background:none;border:none;color:#fff;font-size:18px;cursor:pointer;">—</button>
+    <button onclick="closeChat()" style="float:right;background:none;border:none;color:#fff;font-size:18px;cursor:pointer;">×</button>
+  </div>
+  <div id="chat-body"></div>
+  <div id="chat-buttons"></div>
+  <div id="chat-actions">
+    <button onclick="clearChat()">🗑 Clear Chat</button>
+  </div>
+  <input id="chat-input" type="text" placeholder="Ask me something..." onkeypress="sendMsg(event)">
+</div>
+
+<button id="chat-toggle"><i class="fas fa-robot"></i> Need Help?</button>
+<div id="chat-head" onmousedown="dragMouseDown(event, 'chat-head')" style="display:none;" title="Click to open Fastway Bot">🤖</div>
+
+<style>
+/* --- Chatbot Container --- */
+#chatbot {
+  position: fixed; bottom: 90px; right: 30px;
+  width: 300px; height: 450px;
+  background: #fff; border: 1px solid #ccc;
+  border-radius: 12px; display: none; flex-direction: column;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2); z-index: 9999;
+}
+#chat-header {
+  background:#003366; color:#fff; padding:10px; font-weight:bold;
+  border-top-left-radius:12px; border-top-right-radius:12px;
+  cursor: move;
+}
+#chat-body { 
+  flex:1; padding:10px; overflow-y:auto; 
+  font-size:14px; display:flex; flex-direction:column;
+}
+#chat-input {
+  border: none; padding:10px; width:100%; box-sizing:border-box;
+  border-top:1px solid #ccc;
+}
+#chat-buttons {
+  padding:8px; border-top:1px solid #ddd; display:flex; flex-wrap:wrap; gap:5px;
+}
+#chat-buttons button {
+  background:#f1f1f1; border:1px solid #ccc;
+  border-radius:15px; padding:5px 10px; font-size:12px;
+  cursor:pointer; transition:0.3s;
+}
+#chat-buttons button:hover { background:#ddd; }
+#chat-actions {
+  padding:5px; border-top:1px solid #eee; text-align:right;
+}
+#chat-actions button {
+  background:#ff4444; color:#fff; border:none; padding:5px 10px;
+  border-radius:8px; cursor:pointer; font-size:12px;
+}
+#chat-actions button:hover { background:#cc0000; }
+#chat-toggle {
+  position: fixed; bottom:30px; right:30px;
+  background: #ff6600; color:#fff;
+  border:none; padding:12px 20px;
+  border-radius:50px; cursor:pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+#chat-head {
+  position: fixed;
+  background:#003366; color:#fff;
+  width:60px; height:60px;
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:24px;
+  cursor:move;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 9999;
+  user-select:none;
+}
+
+/* --- Chat Bubbles --- */
+.chat-message {
+  max-width: 80%;
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 15px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  display: inline-block;
+  font-size: 13px;
+  position: relative;
+}
+.chat-user {
+  background: #0056b3;
+  color: #fff;
+  align-self: flex-end;
+  margin-left: auto;
+  border-bottom-right-radius: 3px;
+}
+.chat-bot {
+  background: #f1f1f1;
+  color: #333;
+  align-self: flex-start;
+  margin-right: auto;
+  border-bottom-left-radius: 3px;
+}
+.chat-bot a {
+  color: #0056b3;
+  font-weight: bold;
+  text-decoration: none;
+}
+.chat-bot a:hover { text-decoration: underline; }
+
+/* --- Timestamps --- */
+.timestamp {
+  display: block;
+  font-size: 10px;
+  color: gray;
+  margin-top: 2px;
+  text-align: right;
+}
+</style>
+
+<script>
+const faqs = {
+  "services": { 
+    text: "✅ We offer CCTV, Cybersecurity, VoIP Call Centers, Networking, IT Infrastructure, and Access Control.", 
+    link: "#services" 
+  },
+  "contact": { 
+    text: "📞 You can reach us via:<br>- Phone: <a href='tel:+254791414012'>+254 791 414 012</a><br>- Email: <a href='mailto:fastway1technologies@gmail.com'>fastway1technologies@gmail.com</a><br>- WhatsApp: <a href='https://wa.me/254791414012' target='_blank'>Chat on WhatsApp</a>", 
+    link: "#contact" 
+  },
+  "location": { 
+    text: "📍 We are located at The Knord Mall, Kamiti Road, Ruiru, Kenya.", 
+    link: "#contact" 
+  },
+  "cctv": { 
+    text: "🎥 We provide AI-powered cameras, remote monitoring, night vision, and ANPR (Automatic Number Plate Recognition).", 
+    link: "#services" 
+  },
+  "pos": { 
+    text: "💻 Our Advanced POS comes with inventory management, sales analytics, and loyalty programs.", 
+    link: "#products" 
+  },
+  "appointment": { text: "📅 Would you like to book a consultation? Just type 'book appointment' or 'consultation' to start." },
+  "greeting": { text: "👋 Hello there! How can I assist you today? You can ask about our services, contact info, CCTV, POS, or location." },
+  "farewell": { text: "👋 Goodbye! Have a great day, and feel free to reach out anytime." },
+  "thanks": { text: "😊 You're welcome! Happy to help." },
+  "howareyou": { text: "🤖 I'm doing great, thanks for asking! How about you?" },
+  "name": { text: "🤖 I'm Fastway Bot, your assistant." },
+  "creator": { text: "🛠 I was built by FASTWAY TECHNOLOGIES LTD." },
+  "joke": { jokes: [
+    "😂 Why do programmers prefer dark mode? Because light attracts bugs!",
+    "💻 I told my computer I needed a break… and it froze!",
+    "🤖 What’s a robot’s favorite snack? Microchips!",
+  "😂 Why don’t programmers like nature? Too many bugs!",
+  "🤣 I told my computer I needed a break… and it said: 'No problem, I’ll go to sleep.'",
+  "😆 Why did the PowerPoint Presentation cross the road? To get to the other slide!",
+  "🤖 I asked my router for a joke… it said: 404 funny not found.",
+  "💻 Why was the computer cold? It left its Windows open!",
+  "😂 Why do Java developers wear glasses? Because they can’t C#!",
+  "🤣 My laptop’s got WiFi… but it still can’t connect with me emotionally.",
+  "😆 Tech support’s favorite game? Hide and re-boot!"
+  ]},
+  "default": { text: "🤖 Sorry, I don’t know that one. Please check our Contact section or call us at +254 791 414 012." }
+};
+
+let userName = localStorage.getItem("fastwayUserName") || null;
+let bookingStage = null;
+let bookingData = { name: "", phone: "", date: "" };
+
+function getTimeStamp(){
+  let now = new Date();
+  let hours = now.getHours();
+  let minutes = now.getMinutes().toString().padStart(2,"0");
+  let ampm = hours >= 12 ? "PM" : "AM";
+  hours = hours % 12; if(hours === 0) hours = 12;
+  return `${hours}:${minutes} ${ampm}`;
+}
+
+// --- Bot Reply Logic ---
+function askBot(question){
+  let chatBody = document.getElementById("chat-body");
+  chatBody.innerHTML += `<div class="chat-message chat-user">${question}<span class="timestamp">${getTimeStamp()}</span></div>`;
+
+  let q = question.toLowerCase();
+  let reply = faqs.default;
+
+  // Appointment booking flow
+  if(q.includes("book appointment") || q.includes("consultation")){
+    bookingStage = "name";
+    reply = { text: "📌 Great! Let's book your consultation. First, what’s your full name?" };
+  }
+  else if(bookingStage === "name"){
+    bookingData.name = question;
+    bookingStage = "phone";
+    reply = { text: `👍 Thanks ${bookingData.name}. Now, please provide your phone number:` };
+  }
+  else if(bookingStage === "phone"){
+    bookingData.phone = question;
+    bookingStage = "date";
+    reply = { text: "📅 Got it! What date would you like to book your consultation?" };
+  }
+  else if(bookingStage === "date"){
+    bookingData.date = question;
+    bookingStage = null;
+    let whatsappMsg = `New Consultation Booking:%0A👤 Name: ${bookingData.name}%0A📞 Phone: ${bookingData.phone}%0A📅 Date: ${bookingData.date}`;
+    reply = { 
+      text: `✅ Thank you ${bookingData.name}! Your appointment request has been recorded. We’ll contact you soon.` +
+            `<br><a href="https://wa.me/254791414012?text=${whatsappMsg}" target="_blank">📩 Send to WhatsApp</a>`
+    };
+  }
+  // Name capture
+  else if(q.startsWith("my name is") || q.startsWith("i am ")) {
+    userName = q.replace("my name is","").replace("i am","").trim();
+    localStorage.setItem("fastwayUserName", userName);
+    reply = { text: `👋 Nice to meet you, ${userName}! How can I assist you today?` };
+  } 
+  // Greetings
+  else if(["hi","hello","hey","good morning","good afternoon","good evening"].some(g => q.includes(g))){
+    reply = userName ? { text: `👋 Hello ${userName}! How can I assist you today?` } : faqs.greeting;
+  }
+  // Farewells
+  else if(["bye","goodbye","see you","good night","goodnight","later"].some(f => q.includes(f))){
+    reply = userName ? { text: `👋 Goodbye ${userName}, talk to you soon!` } : faqs.farewell;
+  }
+  // Gratitude
+  else if(["thanks","thank you","thx","thanx"].some(t => q.includes(t))){
+    reply = userName ? { text: `😊 You're welcome, ${userName}! Happy to help.` } : faqs.thanks;
+  }
+  // "How are you"
+  else if(["how are you","how r u","how are u"].some(h => q.includes(h))){
+    reply = userName ? { text: `🤖 I'm doing great, ${userName}! Thanks for asking. How are you?` } : faqs.howareyou;
+  }
+  // Bot name
+  else if(q.includes("your name") || q.includes("who are you")){
+    reply = faqs.name;
+  }
+  // Bot creator
+  else if(q.includes("who created you") || q.includes("who made you")){
+    reply = faqs.creator;
+  }
+  // Jokes
+  else if(q.includes("joke")){
+    let jokes = faqs.joke.jokes;
+    reply = { text: jokes[Math.floor(Math.random()*jokes.length)] };
+  }
+  // FAQ fallback
+  else {
+    for (let key in faqs) {
+      if (q.includes(key)) {
+        reply = faqs[key];
+        break;
+      }
+    }
+  }
+
+  let replyHtml = `<div class="chat-message chat-bot">${reply.text}<span class="timestamp">${getTimeStamp()}</span></div>`;
+  if(reply.link){
+    replyHtml += `<div class="chat-message chat-bot"><a href="${reply.link}" onclick="scrollToSection('${reply.link}'); return false;">👉 See More</a><span class="timestamp">${getTimeStamp()}</span></div>`;
+  }
+
+  chatBody.innerHTML += replyHtml;
+  chatBody.scrollTop = chatBody.scrollHeight;
+  localStorage.setItem("fastwayChat", chatBody.innerHTML);
+
+  showQuickReplies();
+}
+
+// --- Quick Reply Buttons ---
+function showQuickReplies(){
+  let chatButtons = document.getElementById("chat-buttons");
+  chatButtons.innerHTML = `
+    <button onclick="askBot('services')">📌 Services</button>
+    <button onclick="askBot('contact')">📌 Contact Info</button>
+    <button onclick="askBot('location')">📌 Location</button>
+    <button onclick="askBot('cctv')">📌 CCTV</button>
+    <button onclick="askBot('pos')">📌 POS</button>
+    <button onclick="askBot('book appointment')">📌 Book Appointment</button>
+  `;
+}
+
+// --- Restore chat + user name ---
+window.addEventListener("load", () => {
+  let savedChat = localStorage.getItem("fastwayChat");
+  if(savedChat) document.getElementById("chat-body").innerHTML = savedChat;
+  if(userName){
+    let chatBody = document.getElementById("chat-body");
+    chatBody.innerHTML += `<div class="chat-message chat-bot">Welcome back, ${userName}! 👋<span class="timestamp">${getTimeStamp()}</span></div>`;
+  }
+  showQuickReplies();
+
+  let savedHead = JSON.parse(localStorage.getItem("fastwayHeadPos"));
+  if(savedHead){
+    let head = document.getElementById("chat-head");
+    head.style.top = savedHead.top;
+    head.style.left = savedHead.left;
+  }
+});
+
+function sendMsg(e){ 
+  if(e.key === 'Enter'){ 
+    let input=document.getElementById("chat-input"); 
+    let msg=input.value.trim(); 
+    if(msg!==""){ askBot(msg); input.value=""; } 
+  } 
+}
+
+// --- Open/Close/Minimize Logic ---
+document.getElementById("chat-toggle").onclick=function(){ 
+  document.getElementById("chatbot").style.display="flex"; 
+  this.style.display="none"; 
+};
+function closeChat(){ 
+  document.getElementById("chatbot").style.display="none"; 
+  document.getElementById("chat-toggle").style.display="block"; 
+  document.getElementById("chat-head").style.display="none"; 
+}
+function minimizeChat(){ 
+  document.getElementById("chatbot").style.display="none"; 
+  let head=document.getElementById("chat-head"); 
+  head.style.display="flex"; 
+  head.style.bottom="30px"; 
+  head.style.right="30px"; 
+}
+document.getElementById("chat-head").onclick=function(){ 
+  document.getElementById("chatbot").style.display="flex"; 
+  this.style.display="none"; 
+  document.getElementById("chat-toggle").style.display="none"; 
+}
+function clearChat(){ 
+  document.getElementById("chat-body").innerHTML=""; 
+  localStorage.removeItem("fastwayChat"); 
+}
+
+// --- Auto Greet after 10s ---
+setTimeout(()=>{ 
+  if(!localStorage.getItem("fastwayChat")){ 
+    document.getElementById("chatbot").style.display="flex"; 
+    document.getElementById("chat-toggle").style.display="none"; 
+    let chatBody=document.getElementById("chat-body"); 
+    chatBody.innerHTML+=`<div class="chat-message chat-bot">👋 Hi there! Need help? Ask about services, contact, location, CCTV, POS, or book an appointment.<span class="timestamp">${getTimeStamp()}</span></div>`; 
+    localStorage.setItem("fastwayChat", chatBody.innerHTML); 
+  } 
+},10000);
+
+// --- Draggable with SNAP ---
+let pos1=0,pos2=0,pos3=0,pos4=0,dragTarget=null;
+function dragMouseDown(e,elementId){ 
+  e.preventDefault(); 
+  dragTarget=document.getElementById(elementId); 
+  pos3=e.clientX; pos4=e.clientY; 
+  document.onmouseup=closeDragElement; 
+  document.onmousemove=elementDrag; 
+}
+function elementDrag(e){ 
+  e.preventDefault(); 
+  pos1=pos3-e.clientX; pos2=pos4-e.clientY; 
+  pos3=e.clientX; pos4=e.clientY; 
+  dragTarget.style.top=(dragTarget.offsetTop-pos2)+"px"; 
+  dragTarget.style.left=(dragTarget.offsetLeft-pos1)+"px"; 
+  dragTarget.style.bottom="auto"; 
+  dragTarget.style.right="auto"; 
+}
+function closeDragElement(){
+  document.onmouseup=null; 
+  document.onmousemove=null;
+  if(dragTarget && dragTarget.id==="chat-head"){
+    let winWidth=window.innerWidth;
+    let head=dragTarget;
+    let headWidth=head.offsetWidth;
+    let currentLeft=head.offsetLeft;
+    let snapToLeft=currentLeft < (winWidth/2);
+    head.style.left = snapToLeft ? "10px" : (winWidth-headWidth-10)+"px";
+    localStorage.setItem("fastwayHeadPos", JSON.stringify({ top: head.style.top, left: head.style.left }));
+  }
+}
+</script>
+
+    <!-- JavaScript -->
+    <script>
+        // Document ready handler
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize all modules
+            initMobileMenu();
+            initProductFilter();
+            initFormValidation();
+            initCurrentYear();
+            initServiceCardInteractions();
+            initDynamicCaptcha();
+        });
+
+        // Mobile menu toggle
+        function initMobileMenu() {
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const menu = document.getElementById('primary-navigation');
+            
+            if (toggle && menu) {
+                toggle.addEventListener('click', function() {
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !isExpanded);
+                    menu.setAttribute('aria-expanded', !isExpanded);
+                });
+            }
+        }
+
+        // Product filtering and search
+        function initProductFilter() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+            const searchInput = document.getElementById('product-search');
+            
+            if (filterButtons.length && productCards.length) {
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        button.classList.add('active');
+                        filterProducts();
+                    });
+                });
+                
+                if (searchInput) {
+                    searchInput.addEventListener('input', filterProducts);
+                }
+            }
+            
+            function filterProducts() {
+                const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+                const searchTerm = document.getElementById('product-search').value.toLowerCase();
+                
+                productCards.forEach(card => {
+                    const matchesCategory = activeFilter === 'all' || card.dataset.category === activeFilter;
+                    const matchesSearch = card.textContent.toLowerCase().includes(searchTerm);
+                    
+                    card.style.display = (matchesCategory && matchesSearch) ? 'block' : 'none';
+                });
+            }
+        }
+
+        // Form validation and submission
+        function initFormValidation() {
+            const form = document.getElementById('contact-form');
+            
+            if (form) {
+                form.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    // Validate form
+                    if (!validateForm()) {
+                        return;
+                    }
+                    
+                    // Check honeypot field
+                    if (document.getElementById('website').value !== '') {
+                        return; // Likely a bot
+                    }
+                    
+                    // Check CAPTCHA
+                    const captchaResponse = document.getElementById('captcha-response').value;
+                    const captchaAnswer = document.getElementById('captcha-answer').value;
+                    
+                    if (captchaResponse !== captchaAnswer) {
+                        showError(document.getElementById('captcha-response'), 'Incorrect answer');
+                        return;
+                    }
+                    
+                    // Submit form
+                    await submitForm();
+                });
+                
+                // Add input validation
+                const inputs = form.querySelectorAll('input[required], textarea[required]');
+                inputs.forEach(input => {
+                    input.addEventListener('blur', () => validateField(input));
+                });
+            }
+            
+            function validateForm() {
+                let isValid = true;
+                const inputs = document.querySelectorAll('#contact-form input[required], #contact-form textarea[required]');
+                
+                inputs.forEach(input => {
+                    if (!validateField(input)) {
+                        isValid = false;
+                    }
+                });
+                
+                return isValid;
+            }
+            
+            function validateField(field) {
+                const errorElement = document.getElementById(`${field.id}-error`);
+                
+                if (!field.checkValidity()) {
+                    let message = '';
+                    
+                    if (field.validity.valueMissing) {
+                        message = 'This field is required';
+                    } else if (field.validity.typeMismatch) {
+                        message = 'Please enter a valid email address';
+                    } else if (field.validity.tooShort) {
+                        message = `Please enter at least ${field.minLength} characters`;
+                    }
+                    
+                    showError(field, message);
+                    return false;
+                } else {
+                    clearError(field);
+                    return true;
+                }
+            }
+            
+            function showError(field, message) {
+                const errorElement = document.getElementById(`${field.id}-error`);
+                field.setAttribute('aria-invalid', 'true');
+                
+                if (errorElement) {
+                    errorElement.textContent = message;
+                    errorElement.style.display = 'block';
+                }
+            }
+            
+            function clearError(field) {
+                const errorElement = document.getElementById(`${field.id}-error`);
+                field.removeAttribute('aria-invalid');
+                
+                if (errorElement) {
+                    errorElement.textContent = '';
+                    errorElement.style.display = 'none';
+                }
+            }
+            
+            async function submitForm() {
+                const form = document.getElementById('contact-form');
+                const formMessages = document.getElementById('form-messages');
+                const submitBtn = document.getElementById('submit-btn');
+                const btnText = submitBtn.querySelector('.btn-text');
+                
+                // Show loading state
+                submitBtn.disabled = true;
+                btnText.textContent = 'Sending...';
+                
+                try {
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: new FormData(form),
+                        headers: { 'Accept': 'application/json' }
+                    });
+
+                    if (response.ok) {
+                        formMessages.innerHTML = '✅ Thank you! We\'ll contact you within 24 hours.';
+                        formMessages.classList.add('success');
+                        form.reset();
+                        generateCaptcha(); // Generate new CAPTCHA after successful submission
+                    } else {
+                        throw new Error('Form submission failed');
+                    }
+                } catch (error) {
+                    formMessages.innerHTML = '❌ Error: Please try again or call us directly at <a href="tel:+254791414012">+254 791 414 012</a>';
+                    formMessages.classList.add('error');
+                } finally {
+                    // Reset button state
+                    submitBtn.disabled = false;
+                    btnText.textContent = 'SUBMIT';
+                    
+                    // Scroll to messages
+                    formMessages.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    
+                    // Hide messages after timeout
+                    setTimeout(() => {
+                        formMessages.classList.remove('success', 'error');
+                        formMessages.innerHTML = '';
+                    }, 10000);
+                }
+            }
+        }
+
+        // Dynamic CAPTCHA generation
+        function initDynamicCaptcha() {
+            generateCaptcha();
+        }
+
+        function generateCaptcha() {
+            const num1 = Math.floor(Math.random() * 10);
+            const num2 = Math.floor(Math.random() * 5) + 1; // 1-5 to keep it simple
+            document.getElementById('captcha-question').textContent = `What is ${num1} + ${num2}? (Anti-spam) *`;
+            document.getElementById('captcha-answer').value = num1 + num2;
+        }
+
+        // Service card interactions
+        function initServiceCardInteractions() {
+            document.querySelectorAll('.service-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    window.location.href = '#contact';
+                });
+                
+                card.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        window.location.href = '#contact';
+                    }
+                });
+            });
+        }
+
+        // Update current year in footer
+        function initCurrentYear() {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        }
+
+        // Google Analytics
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-KGXFFFNJ1W', { 
+            page_title: document.title,
+            page_path: window.location.pathname,
+            anonymize_ip: true
+        });
+
+        // Cookie Consent
+        window.addEventListener('DOMContentLoaded', function() {
+            window.cookieconsent.initialise({
+                palette: {
+                    popup: {
+                        background: "#003366",
+                        text: "#ffffff"
+                    },
+                    button: {
+                        background: "#ff6600",
+                        text: "#ffffff"
+                    }
+                },
+                theme: "classic",
+                position: "bottom-right",
+                content: {
+                    message: "We use cookies to ensure you get the best experience on our website.",
+                    dismiss: "Got it!",
+                    link: "Learn more",
+                    href: "/privacy-policy.html"
+                }
+            });
+        });
+
+        // Register Service Worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').then(registration => {
+                    console.log('ServiceWorker registration successful');
+                }).catch(err => {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+    
+    <!-- Privacy Policy Modal -->
+<div id="policyModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+     background:rgba(0,0,0,0.7); z-index:1000;">
+  <div style="background:#fff; margin:5% auto; padding:20px; width:80%; max-width:800px; 
+              max-height:80%; overflow-y:auto; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.3);">
+
+    <h2 style="color:#003366; text-align:center;">Privacy Policy</h2>
+    <hr>
+
+    <p><strong>FASTWAY TECHNOLOGIES LTD</strong> (“we,” “our,” “us”) values your privacy. 
+    This Privacy Policy explains how we collect, use, and protect your information when you use our website, services, and solutions.</p>
+
+    <h3>1. Information We Collect</h3>
+    <p>We may collect the following types of information:</p>
+<ul>
+<li>Personal Information – Name, email address, phone number, and other details you provide when contacting us or requesting services.</li>
+
+<li>Technical Information – IP address, browser type, device information, and usage data collected through cookies and analytics tools.</li>
+
+<li>Service Data – Information related to the services we provide (e.g., networking, CCTV, IoT, POS systems, and other solutions).</li>
+</ul>
+    
+    <h3>2. How We Use Your Information</h3>
+    <p>We use collected information to:</p>
+    <ul>
+      <li>To provide and improve our services</li>
+      <li>To respond to your inquiries and support requests</li>
+      <li>To Send important updates, service notices, or promotional content (only if you’ve opted in)</li>
+      <li>For security, legal compliance, and fraud prevention</li>
+    </ul>
+
+    <h3>3. Data Protection</h3>
+    <p>We use appropriate security measures to protect your personal data. However, no system is 100% secure, and we encourage responsible online practices.</p>
+
+    <h3>4. Third-Party Sharing</h3>
+    <p>We do not sell, rent or trade your personal information. However, we may share limited data with Trusted service providers and partners who assist in delivering our services. We can also share your data with Legal authorities if required by law, regulation, or legal process</p>
+
+    <h3>5. Your Rights</h3>
+    <p>You may request access, correction, or deletion of your data by contacting us at 
+    <a href="mailto:info@fastwaytechnologies.co.ke">info@fastwaytechnologies.co.ke</a>.</p>
+
+    <h3>6. Updates</h3>
+    <p>This Privacy Policy may be updated from time to time. Please review this page periodically for changes.</p>
+
+    <p><strong>Contact Us:</strong><br>
+    Fastway Technologies Ltd<br>
+    Website: <a href="https://www.fastwaytechnologies.co.ke" target="_blank">www.fastwaytechnologies.co.ke</a><br>
+    Phone: +254 791 414 012 / +254 107 703 880</p>
+
+    <!-- Close Button -->
+    <div style="text-align:center; margin-top:20px;">
+      <button onclick="document.getElementById('policyModal').style.display='none'" 
+              style="padding:10px 20px; background:#003366; color:#fff; border:none; border-radius:8px; cursor:pointer;">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
